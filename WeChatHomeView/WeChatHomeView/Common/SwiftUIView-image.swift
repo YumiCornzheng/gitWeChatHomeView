@@ -12,8 +12,7 @@ struct SwiftUIView_image: View {
         Image("JackMa")
             .resizable()
             .frame(width: 200, height: 200)
-        //裁剪
-            .clipped()
+            .clipped()//裁剪
     }
 }
 

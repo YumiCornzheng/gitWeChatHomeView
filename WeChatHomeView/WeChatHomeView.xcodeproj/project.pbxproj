@@ -7,20 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B17CA30E2886999A00D6EC4A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17CA30D2886999A00D6EC4A /* Message.swift */; };
+		B17CA3102886BA1C00D6EC4A /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17CA30F2886BA1C00D6EC4A /* MessageRow.swift */; };
 		B1B5CBD8287EC8CD0027B1D3 /* SwiftUIView-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B5CBD7287EC8CD0027B1D3 /* SwiftUIView-image.swift */; };
 		B1F4AE31287E9FA4001A78DD /* WeChatHomeViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4AE30287E9FA4001A78DD /* WeChatHomeViewApp.swift */; };
-		B1F4AE33287E9FA4001A78DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4AE32287E9FA4001A78DD /* ContentView.swift */; };
+		B1F4AE33287E9FA4001A78DD /* MessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4AE32287E9FA4001A78DD /* MessageList.swift */; };
 		B1F4AE35287E9FA7001A78DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F4AE34287E9FA7001A78DD /* Assets.xcassets */; };
 		B1F4AE38287E9FA7001A78DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1F4AE37287E9FA7001A78DD /* Preview Assets.xcassets */; };
+		B1FA1051288938C9007F077C /* MessageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA1050288938C8007F077C /* MessageDetail.swift */; };
+		B1FA105528894C6A007F077C /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FA105428894C6A007F077C /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B17CA30D2886999A00D6EC4A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B17CA30F2886BA1C00D6EC4A /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		B1B5CBD7287EC8CD0027B1D3 /* SwiftUIView-image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUIView-image.swift"; sourceTree = "<group>"; };
 		B1F4AE2D287E9FA4001A78DD /* WeChatHomeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatHomeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F4AE30287E9FA4001A78DD /* WeChatHomeViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatHomeViewApp.swift; sourceTree = "<group>"; };
-		B1F4AE32287E9FA4001A78DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B1F4AE32287E9FA4001A78DD /* MessageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageList.swift; sourceTree = "<group>"; };
 		B1F4AE34287E9FA7001A78DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1F4AE37287E9FA7001A78DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B1FA1050288938C8007F077C /* MessageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetail.swift; sourceTree = "<group>"; };
+		B1FA105428894C6A007F077C /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				B1F4AE30287E9FA4001A78DD /* WeChatHomeViewApp.swift */,
-				B1F4AE32287E9FA4001A78DD /* ContentView.swift */,
-				B1B5CBD7287EC8CD0027B1D3 /* SwiftUIView-image.swift */,
+				B1FA105328894C4E007F077C /* Common */,
+				B1FA105228894C41007F077C /* Model */,
+				B1F4AE32287E9FA4001A78DD /* MessageList.swift */,
+				B1FA105428894C6A007F077C /* Home.swift */,
+				B1FA1050288938C8007F077C /* MessageDetail.swift */,
+				B17CA30F2886BA1C00D6EC4A /* MessageRow.swift */,
 				B1F4AE34287E9FA7001A78DD /* Assets.xcassets */,
 				B1F4AE36287E9FA7001A78DD /* Preview Content */,
 			);
@@ -68,6 +80,22 @@
 				B1F4AE37287E9FA7001A78DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B1FA105228894C41007F077C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B17CA30D2886999A00D6EC4A /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1FA105328894C4E007F077C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B1B5CBD7287EC8CD0027B1D3 /* SwiftUIView-image.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1F4AE33287E9FA4001A78DD /* ContentView.swift in Sources */,
+				B1F4AE33287E9FA4001A78DD /* MessageList.swift in Sources */,
+				B17CA30E2886999A00D6EC4A /* Message.swift in Sources */,
 				B1F4AE31287E9FA4001A78DD /* WeChatHomeViewApp.swift in Sources */,
 				B1B5CBD8287EC8CD0027B1D3 /* SwiftUIView-image.swift in Sources */,
+				B1FA1051288938C9007F077C /* MessageDetail.swift in Sources */,
+				B17CA3102886BA1C00D6EC4A /* MessageRow.swift in Sources */,
+				B1FA105528894C6A007F077C /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
